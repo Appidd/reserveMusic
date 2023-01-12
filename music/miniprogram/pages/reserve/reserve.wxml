@@ -1,0 +1,144 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:300rpx;width:100%" class="swipers">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="item_group">
+  <van-tabs animated color='#fcc600' line-width="80" swipeable>
+    <van-tab title="录音租棚">
+      <block wx:for="{{lyzp}}">
+
+      
+<view class="goods_group" bindtap="todetail" id="{{item._id}}">
+  <view class="goods">
+    <image src="{{item.goodsPicture[0]}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{item.goodsName}}</view>
+    <view class="remark">{{item.remark}}</view>
+   
+    <view class="price">
+      <view class="reprice"> ￥{{item.nowPrice}}/小时</view>
+     
+      <view class="faprice">￥{{item.beforePrice}}/小时</view>
+    </view>
+  </view>
+  </view>
+</view>
+</block>
+    </van-tab>
+    <van-tab title="后期制作">
+      <block wx:for="{{hqzz}}">
+<label>
+<view class="goods_group" id="{{item._id}}"  bindtap="todetail1">
+  <view class="goods">
+    <image src="{{item.goodsPicture}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{item.goodsName}}</view>
+    <view class="remark">{{item.remark}}</view>
+    <view class="price">
+      <view class="reprice"> ￥{{item.nowPrice}}/小时</view>
+     
+      <view class="faprice">￥{{item.beforePrice}}/小时</view>
+    </view>
+  </view>
+  </view>
+</view>
+</label>
+</block>
+    </van-tab>
+    <van-tab title="拍摄+">
+      <block wx:for="{{ps}}">
+
+      
+<view class="goods_group" bindtap="todetail1" id="{{item._id}}">
+  <view class="goods">
+    <image src="{{item.goodsPicture}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{item.goodsName}}</view>
+    <view class="remark">{{item.remark}}</view>
+    <view class="price">
+      <view class="reprice"> ￥{{item.nowPrice}}/小时</view>
+     
+      <view class="faprice">￥{{item.beforePrice}}/小时</view>
+    </view>
+  </view>
+  </view>
+</view>
+</block>
+    </van-tab>
+    <van-tab title="音乐创作">
+      <block wx:for="{{yycz}}">
+
+      
+<view class="goods_group" bindtap="todetail1" id="{{item._id}}">
+  <view class="goods">
+    <image src="{{item.goodsPicture}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{item.goodsName}}</view>
+    <view class="remark">{{item.remark}}</view>
+    <view class="price">
+      <view class="reprice"> ￥{{item.nowPrice}}/小时</view>
+     
+      <view class="faprice">￥{{item.beforePrice}}/小时</view>
+    </view>
+  </view>
+  </view>
+</view>
+</block>
+    </van-tab>
+    <van-tab title="优惠套餐">
+      <block wx:for="{{yhtc}}">
+
+      
+<view class="goods_group" bindtap="todetail" id="{{item._id}}">
+  <view class="goods">
+    <image src="{{item.goodsPicture}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{item.goodsName}}</view>
+    <view class="remark">{{item.remark}}</view>
+    <view class="price">
+      <view class="reprice"> ￥{{item.nowPrice}}/小时</view>
+     
+      <view class="faprice">￥{{item.beforePrice}}/小时</view>
+    </view>
+  </view>
+  </view>
+</view>
+
+
+</block>
+<view class="goods_group" bindtap="tobcj" >
+  <view class="goods">
+    <image src="{{bcj.img}}"></image>
+    <view style="margin-left:20rpx">
+    <view class="name">{{bcj.name}}</view>
+    <view class="remark">{{bcj.remark}}</view>
+    <view class="price">
+      <view class="repricea">{{bcj.price}}</view>
+     
+     
+    </view>
+  </view>
+  </view>
+</view>
+    </van-tab>
+  </van-tabs>
+  
+
+
+<van-divider contentPosition="center">没有更多了</van-divider>
+</view>
+<navigator url="../rate/rate">
+
+<view class="money">
+  <view class="btn">
+  <image src="../../images/money.png"></image>
+  <view>费率</view>
+  </view>
+</view>
+</navigator>

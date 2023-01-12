@@ -1,0 +1,36 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:300rpx;width:100%" class="swipers">
+    <block wx:for="{{goods.swiper}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="container">
+  <view class="one">预定服务：{{goods.goodsName}}</view>
+  <view class="one">预定时间：{{goodsDetail.ytime}} {{goodsDetail.begin}}-{{goodsDetail.end}}</view>
+  <view class="radiobtn">
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <van-radio name="定金支付" icon-size="20px" checked-color="#07c160">先付定金<text style="color:#fcc600">￥200</text></van-radio>
+      <van-radio name="全部支付" icon-size="20px" checked-color="#07c160">全部支付<text style="color:#fcc600">￥{{goodsDetail.price}}</text></van-radio>
+    </van-radio-group>
+  </view>
+  <van-divider customStyle="border-color:rgb(94, 92, 92); font-size: 18px;" />
+
+  <view class="radiobtn">
+    <van-radio-group value="{{ radio1 }}" bind:change="onChange1">
+      <van-radio name="麦币支付" icon-size="20px" checked-color="#07c160">麦币支付(<text style="color:#fcc600">￥{{maiseed}}</text>)</van-radio>
+      <van-radio name="微信支付" icon-size="20px" checked-color="#07c160">微信支付</van-radio>
+    </van-radio-group>
+    <van-checkbox value="{{ checked }}" bind:change="onChange2" checked-color="#07c160"><text style="color: white;">优惠券</text><text style="color:#fcc600">￥{{yhui}}</text></van-checkbox>
+  </view>
+  <view class="cancel" bindtap="show">取消规则</view>
+  <view wx:if="{{show}}" class="show">
+    <rich-text nodes="{{cancelRule}}" ></rich-text>
+  </view>
+  <view class="confirm" bindtap="submit">
+    <view class="btn">立即付款</view>
+  </view>
+</view>

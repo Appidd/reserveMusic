@@ -1,0 +1,84 @@
+
+
+
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:400rpx;width:100%" class="swipers">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<van-notice-bar left-icon="volume-o" text="{{notice}}" background="#000000" color="#fdcc00"
+  speed="20" />
+<view class="content">
+
+
+  <view class="goods_group">
+    <view class="a" bindtap="toyuding">
+      <view>
+        <view class="a1">
+          <image src="../../images/dh1.png"></image>
+        </view>
+      </view>
+      <view class="a2">录音拍摄</view>
+    </view>
+    <view class="a" bindtap="toexample">
+      <view>
+        <view class="a1">
+          <image src="../../images/dh2.png"></image>
+        </view>
+      </view>
+      <view class="a2">作品案例</view>
+    </view>
+
+    <view class="a">
+      <navigator url="../aboutus/aboutus">
+        <view>
+          <view class="a1">
+            <image src="../../images/dh3.png"></image>
+          </view>
+        </view>
+        <view class="a2">关于我们</view>
+      </navigator>
+    </view>
+    <view class="a" bindtap="tocontact">
+      <view>
+        <view class="a1">
+          <image src="../../images/dh4.png"></image>
+        </view>
+      </view>
+      <view class="a2">联系我们</view>
+    </view>
+
+  </view>
+  <view class="img">
+    <image src="{{imgUrls1[0]}}" bindtap="toa"></image>
+    <image src="{{imgUrls1[1]}}" bindtap="tob"></image>
+    <image src="{{imgUrls1[2]}}" bindtap="toc"></image>
+  </view>
+<view class="line"></view>
+
+
+
+</view>
+<view class="video">
+  <txv-video vid="{{video}}" playerid="txv1"></txv-video>
+</view>
+<view class="contact">
+  <view class="con_btn" bindtap="call">
+    <view>电联客服</view>
+  </view>
+  <image src="../../images/WI-FI.png" bindtap="connectWifi"></image>
+</view>
+
+<label>
+  <button open-type="contact" bindcontact="handleContact"></button>
+  <image src="../../images/message.png" class="call"></image>
+</label>
+
+
+

@@ -1,0 +1,31 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:300rpx;width:100%" class="swipers">
+    <block wx:for="{{goods.swiper}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="container">
+  <view class="one">预定服务：{{goods.goodsName}}</view>
+  <view class="one" >预定日期：<text style="color:#fcc600">{{ytime}}</text> </view>
+  <view class="one">预定时间：<text style="color:#fcc600">{{begin}}-{{end}}</text></view>
+  <view class="one">单价数量：{{goods.nowPrice}}*{{timelong}}小时</view>
+  <view class="one">服务费用：<text class="price">￥{{price}}</text></view>
+  <view class="two">确认预定信息:</view>
+  <van-field model:value="{{ name }}" placeholder="姓名*" border="{{ false }}" />
+  <van-field model:value="{{ phone }}" placeholder="电话号码*" border="{{ false }}" type='tel'/>
+  <van-field model:value="{{ email }}" placeholder="电子邮件" border="{{ false }}" />
+ 
+  <van-field model:value="{{ more }}" placeholder="可备注更多预定信息" border="{{ false }}" type="textarea" autosize />
+ 
+  <view class="confirm" bindtap="submit">
+    <view class="btn">去支付</view>
+  </view>
+
+
+
+
+</view>

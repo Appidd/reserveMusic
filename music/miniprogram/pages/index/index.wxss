@@ -1,0 +1,125 @@
+
+.banner{
+  /* margin-top: 15rpx; */
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 0rpx;
+}
+.van-notice-bar{
+  height: 50rpx !important;
+}
+.van-notice-bar__content{
+  font-size: 30rpx !important;
+}
+.images{
+  /* position: absolute; */
+  justify-content: center;
+  /* border-radius: 10rpx; */
+  }
+
+image{
+    width: 100%;
+    height: 100%;
+    }
+.content{
+  padding: 40rpx 10rpx 10rpx 10rpx;
+  background-color: rgb(108, 108, 158);
+  background: white;
+  box-sizing: border-box;
+}
+.goods_group{
+  
+  /* margin-top: 20rpx; */
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  /* height: 160rpx; */
+ 
+
+}
+.a{
+  width: 250rpx;
+}
+.a view{
+  
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.a1{
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #000000;
+  border-radius: 50%;
+}
+.a1 image{
+  width: 80rpx;
+  height: 80rpx;
+  /* border-radius: 50%; */
+}
+.a2{
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 22rpx;
+  color: #666666;
+}
+.img{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+}
+.img image{
+  height: 230rpx;
+  width: 230rpx;
+}
+.video{
+  /* margin-top: -30rpx; */
+width: 100%;
+height: 500rpx;
+}
+.contact{
+  margin-top: 20rpx;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffcc00;
+  height: 70rpx;
+  width: 180rpx;
+  color: white;
+  border-radius: 10rpx;
+  box-shadow: rgb(155, 153, 153)  2rpx 3rpx 4rpx;
+}
+.contact image{
+  margin-top: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.call{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  bottom: 100rpx;
+  right: 20rpx;
+  z-index: 999;
+  background: white;
+  border-radius: 50%;
+  border: 2rpx solid #ffd800;
+}
+.line{
+  height: 10rpx;
+  border-bottom: 1rpx rgb(196, 190, 190) dashed;
+}
+

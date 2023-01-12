@@ -1,0 +1,127 @@
+<view class="top">
+  <dropdown prop-array='{{selectArray}}' bind:select='select' selectText='{{selectText}}' img="{{img}}" />
+</view>
+
+<view class='wrap' style="margin-top: 20rpx;">
+  <!-- <view class="head_text">
+    <view class='date-show'>
+      <view class='lt-arrow' bindtap='lastMonth'>
+        <image src='../../images/箭头 (1).png' mode='aspectFit'></image>
+      </view>
+      {{year}}年{{month}}月
+      <view class='rt-arrow' bindtap='nextMonth'>
+        <image src='../../images/箭头.png' mode='aspectFit'></image>
+      </view>
+    </view>
+  </view> -->
+  <!-- <view class='header'>
+    <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view>
+    </view>
+  </view> -->
+  <!-- <view class='date-box'>
+    <radio-group bindchange="radioChange">
+      <view class='label1'>
+
+
+        <block wx:for="{{dateArr}}">
+
+          <label class="ui-radio1 {{item.checked==true?'active1':'active2'}} {{item.isToday>isToday?'b':'a'}}">
+           
+              <radio value="{{item.isToday}}" checked="{{item.checked}}"/>
+
+
+
+
+            <view class="{{item.isToday==isToday?'bb':'aa'}}">
+              <view>
+                {{item.dateNum}}
+              </view>
+              <block wx:if="{{item.dateNum!=undefined}}">
+                <view class="{{item.isToday>isToday?'':'circle'}}"></view>
+              </block>
+             
+            </view>
+          </label>
+        </block>
+
+      </view>
+    </radio-group>
+
+  </view> -->
+</view>
+
+<!-- <block wx:if="{{items1.length}}"> -->
+  <view class="line"></view>
+  <view class="tag">
+    <view class="choosetime">选择时间</view>
+
+
+    <view class="guanli">
+      <view class="one11">
+        <view class="tag1">
+          <view class="tag11"></view>
+          <view class="name">系统屏蔽</view>
+        </view>
+        <view class="tag1">
+          <view class="tag22"></view>
+          <view class="name">用户预定</view>
+        </view>
+      </view>
+      <view class="one11">
+        <view class="tag1">
+          <view class="tag33"></view>
+          <view class="name">管理屏蔽</view>
+        </view>
+        <view class="tag1">
+          <view class="tag44"></view>
+          <view class="name">当前选择</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+  <view class="outtime" animation="{{animationData}}">
+    <view class="intime" >
+      <checkbox-group bindchange="checkboxChange" >
+        <!-- <view class='{{show==true? "label":"label11"}}' > -->
+          <view class="label11" >
+          <label class="ui-radio {{item.checked==true?'active':''}}" wx:for="{{items1}}"
+            style="background-color: {{item.checked==true?'#fb0017':item.color}}; "  >
+
+            <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+            <text class="text" style="color:{{item.color=='#fcc600'?'#000':''}};">{{item.name}}</text>
+          </label>
+        </view>
+      </checkbox-group>
+
+    </view>
+  </view>
+  <!-- <block wx:if="{{show}}">
+    <view class="lookall" bindtap="look">浏览全部</view>
+  </block>
+  <block wx:else="{{!show}}">
+    <view class="lookall" bindtap="look1">收起</view>
+  </block> -->
+  <view class="manager">
+    <view style="margin-left: 20rpx;">封闭管理员信息</view>
+    <view class="inp">
+      <view>姓名*</view>
+      <input type="text" style="width: 500rpx; margin-left: 20rpx;"  placeholder-class="aaa" model:value="{{mname}}"/>
+    </view>
+    <view class="inp">
+      <view>备注*</view>
+      <input type="text" style="width: 500rpx; margin-left: 20rpx;"  placeholder-class="aaa" model:value="{{remark}}"/>
+    </view>
+
+    <view class="btn">
+    <view class="left_btn" bindtap="open">取消封闭</view>
+    <view class="right_btn" bindtap="close">封闭时段</view>
+    </view>
+  </view>
+<!-- </block> -->
+<!-- <block wx:else>
+<view class="notice">当前日期区间无任何预约</view>
+</block> -->

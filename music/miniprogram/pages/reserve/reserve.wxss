@@ -1,0 +1,94 @@
+/* pages/reserve/reserve.wxss */
+.banner{
+  /* margin-top: 15rpx; */
+  display: flex;
+  justify-content: center;
+  margin-top: 0rpx;
+}
+.images{
+  /* position: absolute; */
+  justify-content: center;
+  /* border-radius: 10rpx; */
+  }
+
+image{
+    width: 100%;
+    height: 100%;
+    }
+.item_group{
+  background-color: white;
+  /* width: 100%; */
+  padding: 0rpx 10rpx 10rpx 10rpx;
+}
+
+.van-tab--active{
+  color: #fcc600 !important;
+}
+.goods_group{
+  padding: 30rpx 0rpx 00rpx 0rpx ;
+}
+.goods{
+  display: flex;
+  align-items: center;
+}
+.goods image{
+  
+  width: 266rpx; 
+  height: 150rpx;
+  flex-shrink: 0;
+  border-radius: 10rpx;
+}
+.name{
+  font-size: 28rpx;
+  font-weight: 600;
+  color: rgb(60, 60, 60);
+}
+.remark{
+  color: gray;
+  font-size: 24rpx;
+  margin: 10rpx 0rpx 15rpx 0rpx;
+}
+.price{
+  display: flex;
+
+}
+.reprice{
+  color: #fcc600;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
+.line{
+  height: 100rpx;
+}
+.faprice{
+  color: gray;
+  text-decoration: line-through;
+  margin-left: 60rpx;
+  font-size: 26rpx;
+}
+.money{
+  /* margin-bottom: 200rpx; */
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+.money .btn{
+  width: 300rpx;
+  height: 60rpx;
+  background-color: #fcc600;
+  color: rgb(26, 25, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.btn image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.repricea{
+  color: #fcc600;
+  font-size: 24rpx;
+}

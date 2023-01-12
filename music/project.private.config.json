@@ -1,0 +1,133 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "reserve",
+          "pathName": "pages/reserve/reserve",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "detail",
+          "pathName": "pages/detail/detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "chooseTime",
+          "pathName": "pages/chooseTime/chooseTime",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "rate",
+          "pathName": "pages/rate/rate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "orderconfirm",
+          "pathName": "pages/orderconfirm/orderconfirm",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pay",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "myorder",
+          "pathName": "pages/myorder/myorder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "orderdetail",
+          "pathName": "pages/orderdetail/orderdetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "mine",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "contactus",
+          "pathName": "pages/contactus/contactus",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "example",
+          "pathName": "pages/example/example",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "userinfo",
+          "pathName": "pages/userinfo/userinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "paylast",
+          "pathName": "pages/paylast/paylast",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/schedule/schedule",
+          "pathName": "pages/schedule/schedule",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/orderman/orderman",
+          "pathName": "pages/orderman/orderman",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/uplist/uplist",
+          "pathName": "pages/uplist/uplist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "aboutus",
+          "pathName": "pages/aboutus/aboutus",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "orderman",
+          "pathName": "pages/orderman/orderman",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "music"
+}

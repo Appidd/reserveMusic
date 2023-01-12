@@ -1,0 +1,104 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/reserve/reserve",
+    "pages/mine/mine",
+   "pages/test/test",
+   "pages/detail/detail",
+   "pages/chooseTime/chooseTime",
+   "pages/rate/rate",
+   "pages/orderconfirm/orderconfirm",
+    "pages/pay/pay",
+    "pages/myorder/myorder",
+    "pages/orderdetail/orderdetail",
+    "pages/aboutus/aboutus",
+    "pages/example/example",
+    "pages/contactus/contactus",
+    "pages/exdetail/exdetail",
+    "pages/userinfo/userinfo",
+    "pages/paylast/paylast",
+    "pages/detail1/detail1",
+    "pages/orderman/orderman",
+    "pages/schedule/schedule",
+    "pages/uplist/uplist"
+  ],
+
+  "window": {
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "来麦秀录音棚",
+    "navigationBarTextStyle": "white"
+    
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#fdcc00",
+    "borderStyle": "black",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      { 
+        "pagePath": "pages/reserve/reserve",
+        "iconPath": "images/reserve1.png",
+        "selectedIconPath": "images/reserve.png",
+        "text": "预定"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine1.png",
+        "selectedIconPath": "images/mine.png",
+        "text": "我的"
+      }
+    
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+  "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+  "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+  "van-calendar": "@vant/weapp/calendar/index",
+  "van-checkbox": "@vant/weapp/checkbox/index",
+  "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+  "van-transition": "@vant/weapp/transition/index",
+  "van-radio": "@vant/weapp/radio/index",
+  "van-radio-group": "@vant/weapp/radio-group/index"
+ 
+
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.5.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "enablePullDownRefresh":false,
+  "serviceProviderTicket": "VC9o9SrgsntTlQhTzHQd1/LEnozlBYqwFbTPsVfoWk2U42gRlE5tVY6OQkPEw5dJxMgJheTzZe0W/x7wASB4s6y6psrRAHGYR/M="
+
+}

@@ -1,0 +1,59 @@
+/* pages/userinfo/userinfo.wxss */
+page{
+  background-color: black;
+}
+.top{
+  color: white;
+  margin: 50rpx 10rpx 10rpx 30rpx;
+  font-size: 28rpx;
+}
+.avatar{
+  padding: 20rpx 30rpx;
+  display: flex;
+  margin: 15rpx 30rpx;
+  font-size: 28rpx;
+  position: relative;
+  border-bottom: 1rpx solid gray;
+}
+.avatar view{
+  position: absolute;
+  bottom: 20rpx;
+  left: 0rpx;
+  font-size: 28rpx;
+  color: white;
+}
+.avatar image{
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 100rpx;
+}
+.van-cell{
+  background-color: black !important;
+  height: 90rpx !important;
+}
+.van-field__label{
+  color: white !important;
+  margin-left: 30rpx !important;
+}
+.van-field__placeholder{
+  color: gray !important;
+}
+.confirm{
+  display: flex;
+  justify-content: center;
+  margin-top: 180rpx;
+}
+.confirm .btn{
+  width: 500rpx;
+  background: #fcc600 !important;
+  text-align: center;
+  height: 80rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.van-field__input{
+  color: white !important;
+}

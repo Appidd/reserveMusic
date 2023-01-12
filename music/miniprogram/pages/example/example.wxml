@@ -1,0 +1,21 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:421rpx;width:100%" class="swipers">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+<block wx:for="{{list}}">
+  <view class="card" bindtap="todetail" data-id="{{item._id}}">
+    <image class="img" src="{{item.casepic}}"></image>
+    <view class="card_right">
+      <view class="name">{{item.casename}}</view>
+      <view class="describe">{{item.casedetail}}</view>
+    </view>
+  </view>
+</block>

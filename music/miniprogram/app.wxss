@@ -1,0 +1,6 @@
+page{
+  background-color: #fff;
+  --red:#fb0017;
+  --yellow:#ffcc33;
+height: 100%;
+}

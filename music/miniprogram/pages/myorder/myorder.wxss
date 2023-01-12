@@ -1,0 +1,85 @@
+/* pages/myorder/myorder.wxss */
+.van-ellipsis{
+  background-color: #f7f7f7;
+}
+.card{
+  margin: 20rpx 0rpx;
+  border-radius: 20rpx;
+  /* height: 400rpx; */
+  background-color: white;
+  padding: 20rpx 20rpx;
+}
+.card_top{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 200rpx; */
+  /* background-color: red; */
+  justify-content: space-between;
+}
+.top_left{
+  color: #838383;
+  display: flex;
+  font-size: 28rpx;
+  /* align-items: ; */
+}
+.top_left view{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+
+}
+.top_right{
+  color: #fad56f;
+}
+.middle{
+  display: flex;
+  margin-top: 20rpx;
+}
+.middle image{
+  width: 245rpx;
+  height: 140rpx;
+}
+
+.middle_right{
+  margin-left: 20rpx;
+}
+.middle_right .name{
+font-size: 30rpx;
+}
+.middle_right .time{
+  font-size: 28rpx;
+margin-top: 15rpx;
+  /* font-family: monospace; */
+  /* font-weight: 600; */
+  color: #fad56f;
+}
+.price{
+  /* width: 100%; */
+  display:flex;
+  flex-direction: row-reverse;
+  color: #bbbab8;
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.hj{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30rpx;
+  color: #bbbab8;
+}
+.hjp{
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #272526;
+}
+.btn{
+  width: 200rpx;
+  height: 60rpx;
+  /* background-color: red; */
+  text-align: center;
+  line-height: 60rpx;
+  color: #272526;
+  border: 1rpx solid #d1d0cf;
+  border-radius: 30rpx;
+  margin-top: 30rpx;
+}

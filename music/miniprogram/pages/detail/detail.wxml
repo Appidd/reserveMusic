@@ -1,0 +1,40 @@
+<view class="banner">
+  <swiper indicator-dots="true" indicator-active-color="#00000" indicator-color="rgba(0, 0, 0, .3)" autoplay="true"
+    style="height:420rpx;width:100%" class="swipers">
+    <block wx:for="{{goods.swiper}}" wx:key="{{index}}">
+      <swiper-item class="images">
+        <image src="{{item}}" width="100%" class="image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="content">
+  <view class="name">
+    <view>{{goods.goodsName}}</view>
+    <!-- <view class="like">
+      <van-icon name="star-o" size="20" color="#999999"/>
+      <view class="sc">收藏</view>
+    </view> -->
+  </view>
+  <view class="price">
+    <view class="nprice"> <text style="font-size:24rpx"> ￥</text>{{goods.nowPrice}}/hour</view>
+    <view class="pprice">原价：{{goods.beforePrice}}.00/hour</view>
+  </view>
+</view>
+<view style="padding:10rpx 10rpx 0rpx 10rpx">
+
+
+<rich-text nodes='{{goods.cTop}}'></rich-text>
+</view>
+<view class="cContent">
+  <rich-text nodes='{{goods.cContent}}' class="next"></rich-text>
+</view>
+<van-goods-action>
+<label class="kefu">
+  <button open-type="contact" bindcontact="handleContact"></button>
+  <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon" />
+</label>
+  <van-goods-action-icon icon="wap-home-o" text="首页" bind:click="tohome" />
+  <van-goods-action-icon icon="balance-list-o" text="订单" bind:click="tolist" />
+  <van-goods-action-button text="马上预定" bind:click="onClickButton" type="warning"/>
+</van-goods-action>

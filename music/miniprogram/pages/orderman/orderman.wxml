@@ -1,0 +1,91 @@
+<view class='wrap'>
+  <view class="head_text">
+    <view class='date-show'>
+      <view class='lt-arrow' bindtap='lastMonth'>
+        <image src='../../images/ar1.png' mode='aspectFit'></image>
+      </view>
+      {{year}}年{{month}}月
+      <view class='rt-arrow' bindtap='nextMonth'>
+        <image src='../../images/ar2.png' mode='aspectFit'></image>
+      </view>
+    </view>
+  </view>
+  <view class='header'>
+    <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view>
+    </view>
+  </view>
+  <view class='date-box'>
+    <radio-group bindchange="radioChange">
+      <view class='label1'>
+
+
+        <block wx:for="{{dateArr}}">
+
+          <label class="ui-radio1 {{item.checked==true?'active1':'active2'}} {{item.isToday>isToday?'b':'a'}}">
+            <radio value="{{item.isToday}}" checked="{{item.checked}}" />
+
+
+
+
+            <view class="{{item.isToday==isToday?'bb':'aa'}}">
+              <view>
+                {{item.dateNum}}
+              </view>
+              <block wx:if="{{item.dateNum!=undefined}}">
+                <view class="{{item.isToday>isToday?'':'circle'}}"></view>
+              </block>
+            </view>
+          </label>
+        </block>
+
+      </view>
+    </radio-group>
+
+  </view>
+</view>
+<view style="height: 600rpx;" ></view>
+<block wx:if="{{list.length}}">
+
+  <view  wx:for="{{list}}"   wx:key="{{item.id}}">
+
+    <scroll-view scroll-x="true" style=" white-space: nowrap;width: 100%; position: relative;" wx:key='index'>
+      <view style="display: inline-block;height: 100rpx;" bindtap="toupdate" data-id="{{item.id}}">
+        <view class="list into"  wx:key="{{item.id}}">
+          <view class="list_left">
+            <view class="pname">
+            <block wx:if="{{item.belong=='B'}}">
+            <image src="../../images/b.png"></image>
+            </block>
+            <block wx:if="{{item.belong=='A'}}">
+            <image src="../../images/a.png"></image>
+            </block>
+            <block wx:if="{{item.belong=='A+'}}">
+            <image src="../../images/a+.png"></image>
+            </block>
+            <block wx:if="{{item.belong=='C'}}">
+            <image src="../../images/a+.png"></image>
+            </block>
+             </view>
+            <view class="nn">
+              <view class="n1">{{item.yname}} {{item.remark}}</view>
+              <view class="n2">{{item.remark1?item.remark1:item.yserve}}</view>
+            </view>
+          </view>
+          <view class="list_right" >
+            <view class="begin">{{item.begin}}</view>
+            <view class="end">{{item.end}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="a2" bindtap="del" data-id="{{item.id}}"  wx:key="{{item.id}}">删除</view>
+    </scroll-view>
+  </view>
+
+</block>
+
+<block wx:else>
+  <view class="notice">当前日期区间无任何预约</view>
+</block>
+
+<view class="dangqi" bindtap="tosch">档期管理</view>
+<view style="height: 300rpx;"></view>

@@ -1,0 +1,52 @@
+<view class="top">
+<view class="center">
+<image src="../../images/time.png"></image>
+<view>{{goods.usetype}}</view>
+</view>
+</view>
+<view class="pdetail">
+<image src="../../images/m1.png"></image>
+<view class="p_right">
+<view class="name_phone">
+  <view class="name">{{goods.yname}}</view>
+<view class="phone">{{goods.yphone}}</view>
+</view>
+<view class="email">
+{{goods.yemail}}
+</view>
+<view class="remark">
+备注信息：{{goods.remark}}
+</view>
+</view>
+</view>
+<view class="card" >
+
+<view class="middle">
+  <image src="{{goods.goods.goodsPicture[0]}}"></image>
+
+  <view class="middle_right">
+    <view class="name">{{goods.yserve}}</view>
+     <view class='time' >{{goods.ytime}}    {{week}}</view>
+      <view class='time'>{{goods.ptime}}</view>
+    <view class="price">
+      <view>￥{{goods.goods.nowPrice}}.00×{{goods.timelong}}</view>
+    </view>
+  </view>
+</view>
+<view class="hj">
+  <view>
+    合计：<text class="hjp">￥{{goods.xmoney}}.00</text>
+  </view>
+</view>
+
+</view>
+
+<view class="fdetail">
+<view class="f_left">支付方式：<text class="dj">{{goods.paytype}}</text></view>
+  <view class="f_left">交易流水：<text>微信￥{{goods.paymoney}}，麦币￥{{goods.maibi}}，优惠￥{{goods.yhui}}</text></view>
+<view class="f_left">订单编号：<text>{{goods.ordernum}}</text></view>
+<view class="f_left">付款时间：<text>{{xtime}}</text></view>
+</view>
+<view class="lxbtn" bindtap="call1">
+  <van-button color="#f9c937" >联系客服</van-button>
+</view>

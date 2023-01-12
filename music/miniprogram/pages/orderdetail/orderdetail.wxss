@@ -1,0 +1,236 @@
+/* pages/orderdetail/orderdetail.wxss */
+.top{
+  height: 130rpx;
+  /* width: 100%; */
+  background-color: #f9c937;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10rpx 20rpx;
+  justify-content: space-between;
+}
+.topa{
+  display: flex;
+  align-items: center;
+}
+.top image{
+  margin-right: 15rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.edit{
+  margin-right: 20rpx;
+  border: solid white 1rpx;
+  padding: 5rpx 20rpx;
+  border-radius: 10rpx;
+}
+/* .center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.pdetail{
+  /* width: 100%; */
+  /* height: 200rpx; */
+  background-color: white;
+  border-radius: 20rpx 20rpx 0rpx 0rpx;
+  margin-top: -10rpx;
+  display: flex;
+  padding: 20rpx 20rpx;
+}
+.p_right{
+  margin-left: 15rpx;
+}
+.p_right input{
+  margin: 10rpx 0rpx;
+}
+ 
+.name_phone{
+  /* padding: 0rpx 20rpx; */
+  display: flex;
+  align-items: center;
+}
+.pdetail image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.name_phone .phone{
+  margin-left: 20rpx;
+  /* font-weight: 600; */
+}
+.name_phone .name{
+  margin-top: -5rpx;
+}
+.email{
+  color: #333333;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-size: 30rpx;
+  margin-top: 8rpx;
+}
+.mark{
+  margin: 14rpx 0;
+  height: 38rpx;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  /* font-size: 26rpx; */
+  align-items: center;
+  /* height: 60rpx; */
+  /* line-height: 30rpx; */
+}
+.mark input{
+  
+ margin-top: 0rpx;
+}
+.remark{
+  width: 500rpx;
+  color: #333333;
+  /* margin-top: 8rpx; */
+  /* font-size: 26rpx; */
+  /* height: 30rpx;
+  line-height: 30rpx; */
+  box-sizing: border-box;
+}
+
+.card{
+  margin: 0rpx 0rpx;
+  /* border-radius: 20rpx; */
+  /* height: 400rpx; */
+  background-color: white;
+  padding: 0rpx 20rpx;
+}
+.card_top{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 200rpx; */
+  /* background-color: red; */
+  justify-content: space-between;
+}
+.top_left{
+  color: #838383;
+  display: flex;
+  font-size: 28rpx;
+}
+.top_left view{
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  margin-top: -5rpx;
+  /* font-family: monospace; */
+  /* font-weight: 600; */
+}
+.top_right{
+  color: #f9c937;
+}
+.middle{
+  display: flex;
+  margin-top: 20rpx;
+}
+.middle image{
+  width: 245rpx;
+  height: 140rpx;
+}
+
+.middle_right{
+  margin-left: 20rpx;
+}
+.middle_right .name{
+font-size: 30rpx;
+}
+.middle_right .time{
+
+  white-space: pre;
+  font-size: 28rpx;
+margin-top: 15rpx;
+  /* font-family: monospace; */
+  /* font-weight: 600; */
+  color: #f9c937;
+}
+.price{
+  /* width: 100%; */
+  display:flex;
+  flex-direction: row-reverse;
+  color: #bbbab8;
+  font-size: 26rpx;
+  margin-top: 5rpx;
+  margin-left: 52rpx;
+}
+.hj{
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30rpx;
+  /* color: #bbbab8; */
+}
+
+.hjp{
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #f9c937;
+}
+.fdetail{
+  background-color: white;
+  padding: 20rpx 20rpx;
+}
+.f_left{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #adadad;
+}
+.f_left text{
+  color: #595959;
+}
+.dj{
+  font-size: 30rpx;
+  
+}
+.erwei{
+  margin-top: 20rpx;
+  /* height: 60rpx; */
+  background-color: white;
+  padding: 20rpx 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+}
+.erwei image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+}
+
+.lxbtn{
+  width: 100%;
+  margin-top: 60rpx;
+  display: flex;
+justify-content: center;
+}
+.van-button{
+  width: 400rpx;
+  border-radius: 15rpx !important;
+  font-size: 30rpx !important;
+  color: black !important;
+}
+.van-dropdown-menu__item{
+  background-color:#f9c937;
+
+  /* height: 60rpx; */
+}
+.van-dropdown-menu{
+  border: none !important;
+  box-shadow: none !important;
+
+}
+.van-ellipsis{
+  color: white;
+}
+.van-dropdown-menu__title::after{
+  /* background-color: white !important; */
+  /* color: white !important; */
+  border-left-color: white !important;
+  border-bottom-color: white !important;
+}
+.van-dropdown-item__option--active .van-dropdown-item__title{
+  color: #f9c937 !important;
+}

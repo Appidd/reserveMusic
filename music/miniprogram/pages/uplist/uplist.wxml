@@ -1,0 +1,90 @@
+
+<view class="top">
+  
+<view class="topa">
+  <image src="../../images/time.png"></image>
+  <van-dropdown-menu>
+  <van-dropdown-item value="{{ usetype }}" options="{{ option1 }}" bindchange="change"/>
+ 
+</van-dropdown-menu>
+</view>
+    <block wx:if="{{edit}}">
+    <view class="edit" bindtap="edit">编辑</view>
+  </block>
+  <block wx:if="{{!edit}}">
+    <view class="edit" bindtap="edit">确定</view>
+  </block>
+  
+</view>
+<view class="pdetail">
+
+  <image src="../../images/m1.png"></image>
+  <view class="p_right">
+    <view class="name_phone">
+      <input class='name' model:value="{{yname}}" disabled="{{edit}}"/>
+      
+    </view>
+    <input class="phone" model:value="{{yphone}}" disabled="{{edit}}"/>
+    <input model:value="{{yemail}}" class="email" disabled="{{edit}}"/>
+ 
+    <view class="mark">
+    <view>备注信息:</view>
+    
+      <input model:value="{{remark}}" class="remark" disabled="{{edit}}"/>
+    
+  
+    </view>
+    
+    <view class="mark">
+    <view>备注2:</view>
+    
+      <input model:value="{{remark1}}" class="remark" disabled="{{edit}}"/>
+    
+  
+    </view>
+   
+  </view>
+
+
+</view>
+<view class="card">
+
+
+  <view class="middle">
+    <image src="{{goods.goods.goodsPicture}}"></image>
+
+    <view class="middle_right">
+   
+      <view class='name'> {{goods.yserve}}</view>
+      <view class='time' >{{goods.ytime}}    {{week}}</view>
+      <view class='time'>{{goods.ptime}}</view>
+ 
+      <view class="price">
+        <view>￥{{goods.goods.nowPrice}}.00×{{goods.timelong}}小时</view>
+      </view>
+    </view>
+  </view>
+  <view class="hj">
+    <view>
+      合计：<text class="hjp">￥{{goods.xmoney}}.00</text>
+    </view>
+  </view>
+
+</view>
+
+<view class="fdetail">
+  <view class="f_left">支付方式：<text class="dj">{{goods.paytype}}</text></view>
+  <view class="f_left">交易流水：<text>微信￥{{goods.paymoney}}，麦币￥{{goods.maibi}}，优惠￥{{goods.yhui}}</text></view>
+  <view class="f_left">订单编号：<text>{{goods.ordernum}}</text></view>
+  <view class="f_left">付款时间：<text>{{xtime}}</text></view>
+
+</view>
+
+<!-- <view class="erwei">
+<image src="../../images/ew.png"></image>
+<view>到店或者当面消费时，请向商家出示二维码</view>
+</view> -->
+
+<view class="lxbtn" bindtap="call1" bindtap="submit">
+  <van-button color="#f9c937">确定</van-button>
+</view>

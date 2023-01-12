@@ -1,0 +1,405 @@
+page{
+  background: black;
+}
+
+.head_text{
+  margin-top: 20rpx;
+  background: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  /* height: 60rpx; */
+}
+.date-show{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+     width: 400rpx;
+      font-family: PingFang-SC-Regular;
+     font-size: 30rpx;
+     color: #ffffff;
+   text-align: center;
+   background: black;
+     
+ }
+ .lt-arrow,.rt-arrow{
+      /* position: absolute; */
+     /* top: 1rpx; */
+     /* width: 60rpx;
+    height: 60rpx; */
+   /* padding-right: 0.6rem; */
+}
+ .lt-arrow image,.rt-arrow image{
+    width: 40rpx;
+    height: 40rpx;
+    /* background-color: blue; */
+ }
+  .lt-arrow{
+    margin-right: 60rpx;
+    
+  }
+  .rt-arrow{
+      margin-left: 60rpx;
+  }
+  .header{
+    /* background: black;
+     font-size: 0; */
+     
+ }
+  .header>view{
+      display: inline-block;
+     width: 14.285%;
+     color: #ffffff;
+      font-size: 30rpx;
+     text-align: center;
+      border-bottom: 1px solid #353434;
+      padding: 20rpx 0;
+ }
+
+ 
+ .date-box{
+      font-size: 0;
+     
+  }
+ .date-box>view{
+     position: relative;
+     display: inline-block;
+     width: 14.285%;
+     color: #020202;
+     font-size: 40rpx;
+     text-align: center;
+     vertical-align: middle;
+    
+  }
+  .date-head{
+      height: 60rpx;
+     
+      font-size: 26rpx;
+  }
+
+  .beforday .date-head{
+    color: rgb(88, 88, 88) !important;
+  }
+  .nowDay .date-head{
+     width: 60rpx;
+      border-radius: 50%;
+     text-align: center;
+      color: #fff;
+     background-color: #22A7F6;
+      margin: 0 auto;
+  }
+  .date-weight{
+     font-size: 22rpx;
+    padding: 15rpx 0;
+ }
+ .nowDay .date-weight{
+     color: #22A7F6;
+  }
+
+  .one{
+      position: absolute;
+     bottom: 0;
+      right: 5rpx;
+      width: 20rpx;
+     height: 20rpx;
+      border-radius: 50%;
+      background-color: red;
+  }
+  .two{
+      position: absolute;
+     bottom: 30rpx;
+      right: 5rpx;
+     width: 20rpx;
+     height: 20rpx;
+    border-radius: 50%;
+     background-color: blue;
+ }
+.title{
+  margin-left: 20rpx;
+  margin-top: 50rpx;
+}
+
+.ui-radio radio,.ui-radio checkbox {
+  display: none;
+}
+.line{
+  width: 100%;
+  height: 0.1rpx;
+  background: rgb(177, 176, 175);
+  margin-top: 10rpx;
+}
+.label{
+ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  /* justify-content: space-between; */
+  background: black;
+  /* display: -webkit-box; */
+  overflow: hidden;
+  /* -webkit-box-orient: vertical; */
+  height:270rpx;
+}
+
+.label1{
+ 
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  /* justify-content: space-between; */
+  background: black;
+
+}
+.label11{
+ 
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-items: center;
+  background: black;
+
+}
+.ui-radio1{
+
+
+  width: 14.285%;
+  
+  text-align: center;
+  
+  font-size: 10rpx !important;
+  background: black;
+  color: white;
+}
+
+.ui-radio{
+  border: 0.1rpx solid #929191;
+
+  width: 153rpx;
+  height: 70rpx;
+  text-align: center;
+  margin: 10rpx 10rpx;
+  white-space:nowrap;
+  font-size: 10rpx !important;
+  background: black;
+  color: white;
+}
+.ui-radio1 radio{
+  display: none;
+}
+.ui-radio1.active1{
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+  width: 14.285%;
+  height: 80rpx;
+  text-align: center;
+
+  white-space:nowrap;
+}.ui-radio1.active2{
+ 
+font-size: 30rpx !important;
+display: flex;
+justify-content: center;
+align-items: center;
+  
+  width: 14.285%;
+  height: 80rpx;
+  text-align: center;
+  white-space:nowrap;
+}
+.active2 .bb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30rpx;
+  color: #51a4f1;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+ 
+  text-align: center;
+}
+.aa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.active1 .bb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30rpx;
+  color: black;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #fcc600;
+  text-align: center;
+}
+.circle{
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: #fcc600;
+}
+.active1 .aa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30rpx;
+  color: black;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #fcc600;
+  text-align: center;
+}
+
+.b{
+  color: #858484;
+}
+
+.ui-radio1 .active1 text{
+  background-color:#fcc600;
+  width: 40rpx;
+  height: 40rpx;
+  color:#fcc600 ;
+}
+.ui-radio1.active{
+  background-color:#fcc600;
+
+
+  border: 1px solid  #fcc600;
+  width: 53rpx;
+  height: 53rpx;
+  text-align: center;
+
+  white-space:nowrap;
+}
+.ui-radio.active{
+  background-color:#fcc600;
+
+
+  border: 1px solid  #fcc600;
+  width: 150rpx;
+  height: 70rpx;
+  text-align: center;
+
+  white-space:nowrap;
+}
+.ui-radio1.dis{
+  background-color:#8b8a89;
+ 
+
+  border: 1px solid  #8b8a89;
+  width: 100/7%;
+  height: 70rpx;
+  text-align: center;
+
+  white-space:nowrap;
+}
+.ui-radio.dis{
+  background-color:#8b8a89;
+ 
+
+  border: 1px solid  #8b8a89;
+  width: 150rpx;
+  height: 70rpx;
+  text-align: center;
+
+  white-space:nowrap;
+}
+.text{
+  color:white;
+  line-height:70rpx;
+  font-size: 23rpx;
+}
+
+.ui-radio.active .text{
+
+  line-height:70rpx;
+  font-size: 24rpx;
+  color: black;
+  
+}
+
+.outtime{
+
+  padding: 20rpx 20rpx 10rpx 20rpx ;
+ 
+  border-radius: 10rpx;
+
+
+}
+.intime{
+
+width: 100%;
+  padding-bottom: 10rpx;
+  background: black;
+  border-radius: 10rpx;
+}
+.choosetime{
+  color:white;
+  margin: 20rpx 20rpx 20rpx 30rpx;
+  font-size: 32rpx;
+}
+.van-divider{
+  font-size: 20rpx !important;
+}
+.confirm{
+margin-top: 60rpx;
+  display: flex;
+margin-bottom: 800rpx;
+
+  width: 100%;
+  justify-content: center;
+
+  height: 120rpx;
+  align-items: center;
+}
+.lookall{
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+.confirm .btn{
+  width: 500rpx;
+  background: #fcc600 !important;
+  text-align: center;
+  height: 80rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.van-button{
+  width: 500rpx !important;
+}
+.banner {
+  /* margin-top: 15rpx; */
+  display: flex;
+  justify-content: center;
+}
+.images {
+  /* position: absolute; */
+  justify-content: center;
+  /* border-radius: 10rpx; */
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}

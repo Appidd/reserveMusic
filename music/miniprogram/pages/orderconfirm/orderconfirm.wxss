@@ -1,0 +1,62 @@
+/* pages/orderconfirm/orderconfirm.wxss */
+page{
+  background: black;
+  color: white;
+}
+.banner {
+  /* margin-top: 15rpx; */
+  display: flex;
+  justify-content: center;
+}
+.images {
+  /* position: absolute; */
+  justify-content: center;
+  /* border-radius: 10rpx; */
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+.container{
+  padding: 60rpx 60rpx 60rpx;
+}
+.one{
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+.price{
+  color: #fcc600;
+}
+.two{
+  margin: 20rpx 0rpx 0rpx 40rpx;
+}
+.confirm{
+  display: flex;
+  justify-content: center;
+  margin-top: 160rpx;
+}
+.confirm .btn{
+  width: 500rpx;
+  background: #fcc600 !important;
+  text-align: center;
+  height: 80rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.van-button{
+  width: 500rpx !important;
+}
+
+.van-cell{
+  background:black !important;
+  border-bottom: 1rpx solid gray;
+  margin-top: 20rpx;
+}
+.van-field__input{
+  color: white !important;
+  
+}

@@ -1,0 +1,30 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#fdcc00",
+    "borderStyle": "black",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/reserve/reserve",
+        "iconPath": "images/reserve1.png",
+        "selectedIconPath": "images/reserve.png",
+        "text": "预定"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine1.png",
+        "selectedIconPath": "images/mine.png",
+        "text": "我的"
+      }
+    
+    ]
+  }
+}

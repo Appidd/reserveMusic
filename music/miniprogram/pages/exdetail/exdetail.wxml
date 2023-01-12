@@ -1,0 +1,10 @@
+<view class="card" wx:for="{{list}}">
+<view class="top">
+  <view class="name">{{item.name}}</view>
+<view class="fname">{{item.fname}}</view>
+</view>
+
+<view class="video">
+  <txv-video vid="{{item.video}}" playerid="txv1"></txv-video>
+</view>
+</view>

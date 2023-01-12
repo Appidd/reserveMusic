@@ -1,0 +1,142 @@
+/* pages/mine/mine.wxss */
+page{width:100%;overflow: hidden}
+.blackbg{
+  background: black;
+  height: 280rpx;
+  width: 100%;
+  border-radius: 0rpx 0rpx 10rpx 10rpx;
+}
+.container{
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  margin-top: -250rpx;
+  
+  margin-bottom: 100rpx;
+}
+.head{
+  height: 300rpx;
+  width: 100%;
+  background: white;
+  border-radius: 20rpx;
+}
+.avatar_list{
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  display: flex;
+  justify-content:space-between;
+}
+.avatar_name{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.avatar_name .avatar{
+  font-size: 40rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.nick{
+  margin-left: 10rpx;
+}
+.update{
+  color:#7d7e81;
+  font-size: 24rpx;
+}
+.upimg{
+  width: 40rpx;
+  height: 40rpx;
+}
+.point_list{
+  display: flex;
+  justify-content: space-around;
+}
+.point_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.point_card image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.number{
+  font-size: 28rpx;
+}
+.jifen{
+  font-size: 24rpx;
+  color:#7d7e81;
+  margin-top: 10rpx;
+}
+.card1{
+  width: 100%;
+  background: white;
+  border-radius: 20rpx;
+  /* height: 200rpx; */
+  margin-top: 15rpx;
+  padding: 0rpx 0rpx 30rpx 0rpx;
+ 
+}
+.card2{
+  width: 100%;
+  
+  border-radius: 20rpx;
+  /* height: 200rpx; */
+  margin-top: 60rpx;
+  /* background-color: white; */
+  padding: 0rpx 0rpx 30rpx 0rpx;
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.hy{
+  text-align: center;
+  
+  width: 300rpx;
+
+
+}
+.reserve{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25rpx 20rpx 5rpx 20rpx;
+  font-size: 30rpx;
+ height: 60rpx;
+ line-height: 60rpx;
+}
+.manage{
+  color: gray;
+  margin-right: 20rpx;
+}
+.aa{
+  background-color: #fdcc00;
+  width: 550rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.reserve image{
+  height: 30rpx;
+  width: 30rpx;
+}
+.ycard{
+  display: flex;
+}
+.yh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  flex-direction: column;
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  font-size: 24rpx;
+}
+
+.yh image{
+  width: 60rpx;
+  height: 70rpx;
+}

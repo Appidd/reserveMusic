@@ -1,0 +1,18 @@
+<view class='ms-content-box'>
+  <view class='ms-content' bindtap='selectToggle'>
+
+    <view class="img {{value=='B'?'img2':'acolor'}}">{{value}}</view>
+    <view class='ms-text1'>{{selectText}}</view>
+
+    <view class="{{selectShow ? 'icon-up' : 'icon-down'}}"></view>
+  </view>
+  <view class='ms-options' wx:if="{{selectShow}}">
+    <block wx:for="{{propArray}}">
+
+      <view data-index="{{index}}" wx:key='index' class='ms-option' bindtap='setText'>
+        <view class="img1 {{item.value=='B'?'img2':' '}}">{{item.value}}</view>
+        <view class="ms-text">{{item.text}}</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+<view style="padding: 0rpx 30rpx;">
+<view class="top">会员信息登记:</view>
+<view class="avatar">
+<view> <text space="emsp"> 头像</text> </view>
+<image src="{{userinfo.avatarUrl}}"></image>
+</view>
+  <van-field
+  model:value="{{ name }}"
+    
+    clearable
+    label="姓名"
+    title-width="100rpx"
+    placeholder="请输入姓名"
+    bind:click-icon="onClickIcon"
+    
+  />
+
+  <van-field
+  model:value="{{ phone }}"
+  
+    label="手机"
+    placeholder="请输入手机号"
+    title-width="100rpx"
+    
+  />
+  <van-field
+  model:value="{{ email }}"
+ 
+    label="邮箱"
+    placeholder="请输入邮箱地址"
+    title-width="100rpx"
+    
+  />
+  <van-field
+  model:value="{{ remark }}"
+  
+    label="备注"
+    placeholder="可备注更多信息"
+    title-width="100rpx"
+    
+    type="textarea"
+    autosize
+  />  
+  <view class="confirm" bindtap="submit">
+    <view class="btn">提交</view>
+  </view>
+</view>

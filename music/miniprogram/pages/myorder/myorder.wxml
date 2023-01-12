@@ -1,0 +1,33 @@
+
+
+<view class="card" wx:for="{{list}}" wx:key="{{index}}">
+
+<view class="card_top">
+  <view class="top_left">
+    订单号:<view>{{item.ordernum}}</view>
+  </view>
+  <view class="top_right">{{item.state}}</view>
+</view>
+<view class="middle">
+  <image src="{{item.goodsPicture}}"></image>
+
+  <view class="middle_right">
+    <view class="name">{{item.yserve}}</view>
+    <view class="time"><text space="emsp">{{item.ytime}}   {{item.week}}</text> </view>
+    <view class="time"> {{item.ptime}} </view>
+    <view class="price">
+      <view>￥{{item.nowPrice}}.00×{{item.timelong}}</view>
+    </view>
+  </view>
+</view>
+<view class="hj">
+  <view>
+    合计：<text class="hjp">￥{{item.xmoney}}.00</text>
+  </view>
+</view>
+<view class="hj" bindtap="todetail" data-id="{{item._id}}">
+  <view class="btn">
+    查看详情
+  </view>
+</view>
+</view>

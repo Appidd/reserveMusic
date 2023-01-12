@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="skje">收款金额</view>
+  <view class="input">
+    <view>￥</view>
+    <input type="number" placeholder="请输入金额" model:value="{{money}}" class="in" bindinput="change"/>
+  </view>
+</view>
+<view class="confirm" bindtap="submit" >
+  <view class="btn">去支付</view>
+</view>

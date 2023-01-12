@@ -1,0 +1,45 @@
+page{
+  background-color: black;
+  color:white;
+}
+.container{
+  padding: 60rpx 50rpx;
+}
+.skje{
+  font-size: 24rpx;
+}
+.input{
+  /* height: 60rpx; */
+  padding-bottom: 15rpx;
+  display: flex;
+  margin-top: 40rpx;
+  font-size: 50rpx;
+  border-bottom: 1rpx solid gray;
+}
+.in{
+  height: 80rpx;
+  margin-left: 30rpx;
+}
+.confirm{
+  position: absolute;
+    display: flex;
+  bottom: 200rpx;
+  
+    width: 100%;
+    justify-content: center;
+  
+    height: 120rpx;
+    align-items: center;
+  }
+
+  .confirm .btn{
+    width: 500rpx;
+    background: #fcc600 !important;
+    text-align: center;
+    height: 80rpx;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }

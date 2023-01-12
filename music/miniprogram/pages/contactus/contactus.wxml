@@ -1,0 +1,31 @@
+
+<view class="top">
+  <image src="{{info.img}}" class="top" bindtap="openadress"></image>
+</view>
+<view class="content">
+<view class="address">{{info.address}}</view>
+<view class="phone" bindtap="call1">
+  <view class="aa">
+    <view class="linh"></view>
+    <view>Tel: {{info.gphone}}</view>
+  </view>
+  <view style="font-size: 40rpx;">></view>
+</view>
+<view class="phone" bindtap="call2"> 
+  <view class="aa">
+    <view class="linh"></view>
+    <view>Mobile:  {{info.yphone}}</view>
+  </view>
+  <view style="font-size: 40rpx;">></view>
+</view>
+<view class="phone" bindtap="copy"> 
+  <view class="aa">
+    <view class="linh"></view>
+    <view>Wechat: {{info.wechat}}</view>
+  </view>
+  <view style="font-size: 40rpx;">></view>
+</view>
+</view>
+<view class="bottom">
+<rich-text nodes="{{info.bottom}}"></rich-text>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dropdown":"/components/dropdown/dropdown"
+  },
+  "navigationBarTitleText": "档期管理"
+}
